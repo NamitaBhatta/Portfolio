@@ -1,0 +1,104 @@
+.contact-section {
+  padding: 6rem 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.light .contact-form {
+  background: white;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  color: inherit;
+}
+
+.light .form-group input,
+.light .form-group textarea {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--dark-primary);
+  color: var(--dark-bg);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.light .submit-btn {
+  background-color: var(--light-primary);
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: var(--dark-secondary);
+}
+
+.light .submit-btn:hover {
+  background-color: var(--light-secondary);
+}
+
+
+.success-message {
+  color: #28a745;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  margin-top: 1rem;
+}
+.dark .contact-section h2 {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.316), 
+               0 0 25px rgba(200, 200, 255, 0.4);
+}
+
+
+/* 🌞 Light Mode Glow */
+.light .contact-section h2 {
+  text-shadow: 0 0 10px rgba(70, 130, 180, 0.8), 
+               0 0 20px rgba(70, 130, 180, 0.6);
+}

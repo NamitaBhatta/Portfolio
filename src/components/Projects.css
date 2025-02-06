@@ -1,0 +1,123 @@
+.projects-section {
+  padding: 6rem 0;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.light .project-card {
+  background: white;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.1);
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-content p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.dark .project-content p {
+  color: #a0a0a0;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+  padding: 0.25rem 0.75rem;
+  background: var(--dark-primary);
+  color: var(--dark-bg);
+  border-radius: 15px;
+  font-size: 0.875rem;
+}
+
+.light .tech-tag {
+  background: var(--light-primary);
+  color: white;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: var(--dark-primary);
+}
+
+.light .project-link:hover {
+  color: var(--light-primary);
+}
+
+.dark .projects-section h2 {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.316), 
+               0 0 25px rgba(200, 200, 255, 0.4);
+}
+
+
+/* 🌞 Light Mode Glow */
+.light .projects-section h2 {
+  text-shadow: 0 0 10px rgba(70, 130, 180, 0.8), 
+               0 0 20px rgba(70, 130, 180, 0.6);
+}

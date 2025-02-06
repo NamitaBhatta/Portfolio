@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.education-section {
+  padding: 6rem 0;
+}
+#education {
+  scroll-margin-top: 100px; /* Adjust this based on your header height */
+}
+
+.education-section {
+  overflow-anchor: none;
+}
+.education-section {
+  padding-top: 120px; /* Adjust based on your header height */
+}
+
+
+
+.education-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.education-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.light .education-item {
+  background: white;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+}
+
+.education-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark-primary);
+}
+
+.light .education-item h3 {
+  color: var(--light-primary);
+}
+
+.education-item .degree {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.education-item .location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.education-item .location svg {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .education-section {
+    padding: 4rem 0;
+  }
+  
+  .education-container {
+    grid-template-columns: 1fr;
+  }
+}
+.education-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark-primary);
+}
+
+.education-item .location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.education-item .degree {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.education-item .date {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.dark .education-section h2 {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.316), 
+               0 0 25px rgba(200, 200, 255, 0.4);
+}
+
+
+/* 🌞 Light Mode Glow */
+.light .education-section h2 {
+  text-shadow: 0 0 10px rgba(70, 130, 180, 0.8), 
+               0 0 20px rgba(70, 130, 180, 0.6);
+}
+
+

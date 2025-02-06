@@ -1,0 +1,50 @@
+.footer {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  text-align: center;
+}
+
+.light .footer {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--dark-primary);
+}
+
+.light .social-links a:hover {
+  color: var(--light-primary);
+}
+
+.footer p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #666;
+}
+
+.dark .footer p {
+  color: #a0a0a0;
+}
+
+.connect-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--dark-primary);
+}
+
+.light .connect-text {
+  color: var(--light-primary);
+}

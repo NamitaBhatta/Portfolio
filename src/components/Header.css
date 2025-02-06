@@ -1,0 +1,83 @@
+.header {
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+.header.dark {
+  background-color: rgba(26, 26, 46, 0.8);
+}
+
+.header.light {
+  background-color: rgba(240, 248, 255, 0.8);
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.header nav a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.dark .header nav a {
+  color: var(--dark-text);
+}
+
+.light .header nav a {
+  color: var(--light-text);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+}
+
+.dark .theme-toggle {
+  color: var(--dark-text);
+}
+
+.light .theme-toggle {
+  color: var(--light-text);
+}
+
+.header nav a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.header nav a:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.dark .header nav a:hover {
+  text-shadow: 0 0 8px rgba(173, 216, 230, 0.8);
+}
+
+.light .header nav a:hover {
+  text-shadow: 0 0 8px rgba(70, 130, 180, 0.8);
+}
